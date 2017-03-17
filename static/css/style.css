@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: auto;
+  font-weight: 300;
+  line-height: 1.4em;
+  font-family: "lato", sans-serif;
+}
+
+a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #f9b41e;
+}
+
+/*Navigatie*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 3em;
+  background: #333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+a[href="#home"] {
+    display: flex;
+}
+
+.icon {
+  width: 2.5em;
+}
+
+.icon:hover {
+  transform: rotate(360deg);
+  transition: .7s ease-in-out;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 23em;
+  height: max-content;
+  background: white;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.werk-foto {
+  width: 50%;
+  height: 100%;
+  min-width: 20em;
+}
+
+.werk-foto + .text-column {
+  margin-left
+}
+
+.text-column {
+  align-self: center;
+  width: 19em;
+  min-width: 19em;
+  margin: 0 auto;
+  height: auto;
+}
+
+.full-width-foto {
+  width: 100vw;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.logo-cyd {
+  width: 50%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2em;
+  height: 13em;
+}
+
+.title h1 {
+  align-self: center;
+  font-size: 10vw;
+  color: #333;
+}
+
+.collage-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.collage-2 img {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.column {
+  flex-direction: column;
+  align-self: center;
+}
+
+.contact-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em;
+}
+
+.contact-item .icon {
+  margin-right: 1em;
+}
+
+.logo-background {
+  background: url(../../img/amsterdam.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
