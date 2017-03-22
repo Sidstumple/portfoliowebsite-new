@@ -100,8 +100,48 @@ section {
 }
 
 .logo-cyd {
-  width: 50%;
+  width: 30vw;
+  overflow: visible;
 }
+
+.cls-a {
+  animation: swoosh 1s ease-in-out;
+}
+
+@keyframes swoosh {
+  from {
+    transform: translateX(90vw);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.cls-b{
+  animation: swooshie 1.1s ease-out;
+}
+
+@keyframes swooshie {
+  from {
+    transform: translateY(100em);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/*.cls-c {
+  animation: voilaa 1s ease-out;
+}
+
+@keyframes voilaa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}*/
 
 .title {
   display: flex;
@@ -115,21 +155,6 @@ section {
   align-self: center;
   font-size: 10vw;
   color: #333;
-}
-
-.collage-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-.collage-2 img {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
 }
 
 .column {
@@ -149,8 +174,8 @@ section {
 }
 
 .logo-background {
-  background: url(../../img/amsterdam.jpg);
-  height: 100vh;
+  height: 80vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   background-size: cover;
