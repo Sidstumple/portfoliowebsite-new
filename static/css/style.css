@@ -73,7 +73,6 @@ section {
   width: 100vw;
   min-height: 23em;
   height: max-content;
-  background: white;
   box-sizing: border-box;
   padding: 1em;
 }
@@ -82,10 +81,7 @@ section {
   width: 50%;
   height: 100%;
   min-width: 20em;
-}
-
-.werk-foto + .text-column {
-  margin-left
+  transition: 1s;
 }
 
 .text-column {
@@ -103,6 +99,7 @@ section {
 
 .logo-cyd {
   width: 40vw;
+  height: 90%;
   overflow: visible;
   z-index: 1;
   filter: drop-shadow(0.2em 0.2em 0.1em rgba(0,0,0,0.2));
@@ -142,8 +139,8 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2em;
-  height: 13em;
+  height: auto;
+  margin: -1em 0;
 }
 
 .title h1 {
@@ -153,6 +150,7 @@ section {
 }
 
 .column {
+  display: flex;
   flex-direction: column;
   align-self: center;
 }
@@ -173,7 +171,6 @@ section {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  background-size: cover;
   margin-top: 3em;
   background-repeat: no-repeat;
 }
@@ -181,7 +178,7 @@ section {
 #changing-background {
   height: 80vh;
   overflow: hidden;
-  background-size: cover;
+  background-size: cover !important;
   width: 100%;
   position: absolute;
   top: 0;
@@ -226,4 +223,139 @@ section {
   .logo-cyd {
     width: 60vw;
   }
+}
+
+:target .title .icon{
+  transform: rotate(360deg);
+  transition: .7s ease-in-out;
+}
+
+:target .title h1 {
+  animation: well-hello 1s;
+}
+
+.bigger {
+  min-width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.overlay {
+  width: 95vw;
+  height: 85vh;
+  background: white;
+  padding: 1em;
+  position: fixed;
+  top: 11vh;
+  z-index: 1;
+  -webkit-box-shadow: 0.3em 0.3em 0 0 rgba(0,0,0,0.5);
+  -moz-box-shadow:  0.3em 0.3em 0 0 rgba(0,0,0,0.5);
+  box-shadow:  0.3em 0.3em 0 0 rgba(0,0,0,0.5);
+  box-sizing: border-box;
+}
+
+.photo-viewer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.close {
+  float: right;
+  margin: 0.5em 0.7em;
+  font-size: 1.5em;
+}
+
+@keyframes well-hello {
+  from {
+    font-size: 11vw;
+  }
+  to{
+    font-size: 10vw;
+  }
+}
+
+/*Blog*/
+.blogposts {
+  box-sizing: border-box;
+}
+
+.collage {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  padding: 2em;
+}
+
+.blog-foto {
+  width: 40%;
+  height: 100%;
+}
+
+.extra-fotos {
+  margin-left: 2em;
+  width: 60%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  margin-top: 2em;
+}
+
+.blog-title {
+  text-transform: uppercase;
+  font-size: 5vw;
+  line-height: 1.3em;
+  width: 60%;
+  margin: 0.2em 0;
+}
+
+.line {
+  height: 0.4em;
+  width: 3em;
+  background: #333;
+}
+
+.sfeer-foto {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.extra-fotos .sfeer-foto:first-of-type {
+    padding-right: 2em;
+}
+
+.blog {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.blog > p:first-of-type {
+  background: #6CAD99;
+  padding: 3em 20vw;
+}
+
+.blogpost {
+  width: 100%;
+  padding: 0;
+}
+
+.columns {
+  columns: 14em 2;
+  column-gap: 1.5em;
+  margin: 2em 10vw;
+}
+
+.columns > p:first-of-type {
+  margin: 0;
 }
